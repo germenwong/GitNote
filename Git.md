@@ -160,8 +160,24 @@ doc/*.txt		#会忽略doc/notes.txt 但不包括 doc/server/arch.txt
     git pull origin master
     // 再切换到dev分支
     git checkout dev
-    // 合并
+    // 把master合并到自己分支dev
     git merge master
     （这样两个本地分支的代码都是最新的）
-```
+    
+    
+    //《本地分支合并到远程分支的需求》
+    //1.先创建分支以及下拉远程分支
+    git checkout  -b 本地分支名 origin/远程分支名
+    //2.下拉最新代码
+    git pull origin
+    //3.把自己的分支合并到远程分支
+    git merge 本地分支名
+    //4.最后上传到码云就行啦
+    git push 
+
+
+
+
+
+
 
