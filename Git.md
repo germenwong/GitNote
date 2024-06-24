@@ -174,10 +174,29 @@ doc/*.txt		#会忽略doc/notes.txt 但不包括 doc/server/arch.txt
     git merge 本地分支名
     //4.最后上传到码云就行啦
     git push 
+    
+    // 放弃本地修改，直接使用远程最新代码覆盖
+    git fetch --all
+    git reset --hard origin/分支名
+    git pull
 
 
 
 
 
 
+
+## GitHub用户名更新
+
+如果Github主页中的用户名更改后，包含旧用户名的链接将会失效，虽然不会影响存储仓库的数据但是建议还是更新一下本地的仓库地址。
+
+```kotlin
+git remote set-url origin 新的仓库地址
+```
+
+
+
+
+
+# 123
 
